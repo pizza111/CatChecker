@@ -12,7 +12,7 @@ struct ButtonTryAgainViewAPI: View {
     
     var body: some View {
         Button("Try again") {
-            breedFetcher.fetchData()
+            breedFetcher.loadData()
         }
         .font(.title2)
         .padding()

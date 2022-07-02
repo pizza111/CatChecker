@@ -19,6 +19,8 @@
 		172B2FCD28705BAF00740CCB /* ButtonTryAgainViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FCC28705BAE00740CCB /* ButtonTryAgainViewAPI.swift */; };
 		172B2FCF28705CE700740CCB /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FCE28705CE700740CCB /* DetailsView.swift */; };
 		172B2FD128705D1300740CCB /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FD028705D1300740CCB /* LabelView.swift */; };
+		172B2FD3287063DB00740CCB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FD2287063DA00740CCB /* APIService.swift */; };
+		172B2FD5287063E700740CCB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FD4287063E700740CCB /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		172B2FCC28705BAE00740CCB /* ButtonTryAgainViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTryAgainViewAPI.swift; sourceTree = "<group>"; };
 		172B2FCE28705CE700740CCB /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		172B2FD028705D1300740CCB /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		172B2FD2287063DA00740CCB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		172B2FD4287063E700740CCB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				172B2FC428704D2000740CCB /* BreedFetcher.swift */,
+				172B2FD2287063DA00740CCB /* APIService.swift */,
+				172B2FD4287063E700740CCB /* APIError.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				172B2FC528704D2000740CCB /* BreedFetcher.swift in Sources */,
 				172B2FCF28705CE700740CCB /* DetailsView.swift in Sources */,
 				172B2FB2286FCE0D00740CCB /* ContentView.swift in Sources */,
+				172B2FD3287063DB00740CCB /* APIService.swift in Sources */,
+				172B2FD5287063E700740CCB /* APIError.swift in Sources */,
 				172B2FC228704CF000740CCB /* JSON-Model.swift in Sources */,
 				172B2FB0286FCE0D00740CCB /* CatCheckerApp.swift in Sources */,
 				172B2FC92870593E00740CCB /* LoadingView.swift in Sources */,

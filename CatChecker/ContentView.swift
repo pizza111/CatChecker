@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if breedFetcher.isActive {
+            if breedFetcher.isLoading {
                 LoadingView()
             } else if breedFetcher.errorFetchMessage != nil {
                 ErrorView(breedFetcher: breedFetcher)
