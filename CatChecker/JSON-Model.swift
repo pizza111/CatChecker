@@ -22,7 +22,7 @@ struct Element: Codable, Identifiable {
     var energyLevel, grooming, healthIssues, intelligence: Int?
     var sheddingLevel, socialNeeds, strangerFriendly, vocalisation: Int?
     var experimental, natural, rare: Int?
-    var hairless: Int
+    var hairless: Bool
     var rex, suppressedTail, shortLegs: Int?
     var wikipediaURL: String?
     var hypoallergenic: Int?
@@ -63,6 +63,28 @@ struct Element: Codable, Identifiable {
         case catFriendly = "cat_friendly"
         case bidability
     }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        id = try values.decode(String.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        temperament = try values.decode(String.self, forKey: .temperament)
+        purpleDescription = try values.decode(String.self, forKey: .purpleDescription)
+        energyLevel = try values.decode(Int.self, forKey: .energyLevel)
+        let hair = try values.decode(Int.self, forKey: .hairless)
+        hairless = hair == 1
+        image = try values.decodeIfPresent(ImageOne.self, forKey: .image)
+    }
+    init(name: String, id: String, temperament: String, description: String, energyLevel: Int, hairless: Bool, image: ImageOne) {
+        self.id = id
+        self.name = name
+        self.temperament = temperament
+        self.purpleDescription = description
+        self.energyLevel = energyLevel
+        self.hairless = hairless
+        self.image = image
+    }
+    static let exampleOfBreed = Element(name: "Abyssinian", id: "abys", temperament: "Active, Energetic, Independent, Intelligent, Gentle", description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.", energyLevel: 5, hairless: false, image: ImageOne(id: "0XYvRd7oD", width: 1204, height: 1445, url: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"))
 }
 
 // MARK: - Image
