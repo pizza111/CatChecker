@@ -13,6 +13,12 @@
 		172B2FB7286FCE0F00740CCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172B2FB6286FCE0F00740CCB /* Preview Assets.xcassets */; };
 		172B2FC228704CF000740CCB /* JSON-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FC128704CF000740CCB /* JSON-Model.swift */; };
 		172B2FC528704D2000740CCB /* BreedFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FC428704D2000740CCB /* BreedFetcher.swift */; };
+		172B2FC72870593500740CCB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FC62870593500740CCB /* ErrorView.swift */; };
+		172B2FC92870593E00740CCB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FC82870593E00740CCB /* LoadingView.swift */; };
+		172B2FCB2870595D00740CCB /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FCA2870595D00740CCB /* SuccessView.swift */; };
+		172B2FCD28705BAF00740CCB /* ButtonTryAgainViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FCC28705BAE00740CCB /* ButtonTryAgainViewAPI.swift */; };
+		172B2FCF28705CE700740CCB /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FCE28705CE700740CCB /* DetailsView.swift */; };
+		172B2FD128705D1300740CCB /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FD028705D1300740CCB /* LabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		172B2FB6286FCE0F00740CCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		172B2FC128704CF000740CCB /* JSON-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON-Model.swift"; sourceTree = "<group>"; };
 		172B2FC428704D2000740CCB /* BreedFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedFetcher.swift; sourceTree = "<group>"; };
+		172B2FC62870593500740CCB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		172B2FC82870593E00740CCB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		172B2FCA2870595D00740CCB /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		172B2FCC28705BAE00740CCB /* ButtonTryAgainViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTryAgainViewAPI.swift; sourceTree = "<group>"; };
+		172B2FCE28705CE700740CCB /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		172B2FD028705D1300740CCB /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,12 @@
 			children = (
 				172B2FAF286FCE0D00740CCB /* CatCheckerApp.swift */,
 				172B2FB1286FCE0D00740CCB /* ContentView.swift */,
+				172B2FCA2870595D00740CCB /* SuccessView.swift */,
+				172B2FC82870593E00740CCB /* LoadingView.swift */,
+				172B2FC62870593500740CCB /* ErrorView.swift */,
+				172B2FCE28705CE700740CCB /* DetailsView.swift */,
+				172B2FD028705D1300740CCB /* LabelView.swift */,
+				172B2FCC28705BAE00740CCB /* ButtonTryAgainViewAPI.swift */,
 				172B2FC128704CF000740CCB /* JSON-Model.swift */,
 				172B2FC328704D0C00740CCB /* networking */,
 				172B2FB3286FCE0F00740CCB /* Assets.xcassets */,
@@ -151,10 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172B2FC72870593500740CCB /* ErrorView.swift in Sources */,
 				172B2FC528704D2000740CCB /* BreedFetcher.swift in Sources */,
+				172B2FCF28705CE700740CCB /* DetailsView.swift in Sources */,
 				172B2FB2286FCE0D00740CCB /* ContentView.swift in Sources */,
 				172B2FC228704CF000740CCB /* JSON-Model.swift in Sources */,
 				172B2FB0286FCE0D00740CCB /* CatCheckerApp.swift in Sources */,
+				172B2FC92870593E00740CCB /* LoadingView.swift in Sources */,
+				172B2FCD28705BAF00740CCB /* ButtonTryAgainViewAPI.swift in Sources */,
+				172B2FCB2870595D00740CCB /* SuccessView.swift in Sources */,
+				172B2FD128705D1300740CCB /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
