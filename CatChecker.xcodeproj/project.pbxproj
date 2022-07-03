@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170744552871CBBD0055ADA2 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170744542871CBBD0055ADA2 /* APIServiceProtocol.swift */; };
 		172B2FB0286FCE0D00740CCB /* CatCheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FAF286FCE0D00740CCB /* CatCheckerApp.swift */; };
 		172B2FB2286FCE0D00740CCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2FB1286FCE0D00740CCB /* ContentView.swift */; };
 		172B2FB4286FCE0F00740CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172B2FB3286FCE0F00740CCB /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		170744542871CBBD0055ADA2 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		172B2FAC286FCE0D00740CCB /* CatChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		172B2FAF286FCE0D00740CCB /* CatCheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCheckerApp.swift; sourceTree = "<group>"; };
 		172B2FB1286FCE0D00740CCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				172B2FC428704D2000740CCB /* BreedFetcher.swift */,
 				172B2FD2287063DA00740CCB /* APIService.swift */,
+				170744542871CBBD0055ADA2 /* APIServiceProtocol.swift */,
 				172B2FD4287063E700740CCB /* APIError.swift */,
 			);
 			path = networking;
@@ -178,6 +181,7 @@
 				172B2FC72870593500740CCB /* ErrorView.swift in Sources */,
 				172B2FC528704D2000740CCB /* BreedFetcher.swift in Sources */,
 				172B2FCF28705CE700740CCB /* DetailsView.swift in Sources */,
+				170744552871CBBD0055ADA2 /* APIServiceProtocol.swift in Sources */,
 				172B2FB2286FCE0D00740CCB /* ContentView.swift in Sources */,
 				172B2FD3287063DB00740CCB /* APIService.swift in Sources */,
 				172B2FD5287063E700740CCB /* APIError.swift in Sources */,

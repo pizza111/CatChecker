@@ -12,13 +12,14 @@ class BreedFetcher: ObservableObject {
     @Published var isLoading = true
     @Published var errorFetchMessage: String?
     private let urlString = "https://api.thecatapi.com/v1/breeds"
-    private let apiService = APIService()
+    let service: APIServiceProtocol
     
-    init() {
+    init(service: APIServiceProtocol = APIService()) {
+        self.service = service
         loadData()
     }
     func loadData() {
-        apiService.fetchData(url: URL(string: urlString)) { [unowned self] result in
+        service.fetchData(url: URL(string: urlString)) { [unowned self] result in
             DispatchQueue.main.async {
                 self.isLoading = false
                 
