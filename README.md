@@ -2,6 +2,6 @@ CatChecker displays a list of breeds with a short description next to a picture.
 - SwiftUI
 - fetch JSON data from an API
 - structure networking with MVVM
-- breed lis views with AsyncImage
+- breed list views with AsyncImage
 - unit tests
 - dependency injection
